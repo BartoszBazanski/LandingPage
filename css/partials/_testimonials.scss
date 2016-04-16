@@ -1,0 +1,34 @@
+#testimonials{
+    .container{
+        .testimonial{
+            display:none;
+            p{
+                margin: 0 auto;
+                width: 80%;
+                text-align: center;
+            }
+        }
+        .readable{
+            display: block;
+        }
+        ul{
+            margin: 20px auto;
+            width: 75px;
+            height: 15px;
+            .dot{ 
+                cursor: pointer;
+                border: 2px solid $main-color;
+                border-radius: 50%;
+                float: left;
+                width: 15px;
+                height: 100%;
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+            }
+            .active{
+                background-color: $main-color;
+            }
+        }
+    }
+}

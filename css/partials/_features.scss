@@ -5,7 +5,20 @@
         text-align: center;
     }
     #feature-section{
+        position: relative;
+        display: table;
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            border: 25px solid white;
+        }
         .feature{
+            position: relative;
             border: 1px solid lightgray;
             padding: 50px;
             p {
@@ -22,6 +35,17 @@
                 height: 77px;
                 margin: 15px auto;
                 background-size: 900px 393px;
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 50px;
+                height: 25px;
+                bottom: -12.5px;
+                right: -25px;
+                z-index: 2;
+                background-color: white;
             }
         }
     }

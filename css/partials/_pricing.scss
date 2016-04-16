@@ -1,0 +1,49 @@
+#pricing{
+    background-color: lightgray;
+    text-align: center;
+    .payment-options{
+        .option{
+            padding: 0;
+            border: 2px solid transparent;
+            margin-bottom: 25px;
+            .option-name{
+                font-size: 1.4em;
+                color: white;
+                padding: 10px;
+                background-color: $main-color;
+                border-bottom: 1px solid lightgray;
+            }
+            .option-price{
+                font-size: 2.5em;
+                padding: 5px;
+                font-weight: bold;
+                background-color: white;
+                border-bottom: 1px solid lightgray;
+            }
+            ul{
+                margin: 0 auto;
+                li{
+                    color: gray;
+                    background-color: white;
+                    padding: 10px;
+                    &:not(:last-child){
+                        border-bottom: 1px solid lightgray;
+                    }
+                }
+            }
+            .purchase{
+                padding: 20px;
+                background-color: $main-color;
+                button{
+                    border: none;
+                    width: 175px;
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: darken($main-color, 15);
+                    font-size: 1.2em;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

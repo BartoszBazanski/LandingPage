@@ -33,28 +33,51 @@
   #features p {
     color: gray;
     text-align: center; }
-  #features #feature-section .feature {
-    border: 1px solid lightgray;
-    padding: 50px; }
-    #features #feature-section .feature p {
-      color: gray; }
-    #features #feature-section .feature .icon-1 {
-      background: url("../images/bsprit.png") calc((-76.6px * 1) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .icon-2 {
-      background: url("../images/bsprit.png") calc((-76.6px * 2) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .icon-3 {
-      background: url("../images/bsprit.png") calc((-76.6px * 3) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .icon-4 {
-      background: url("../images/bsprit.png") calc((-76.6px * 4) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .icon-5 {
-      background: url("../images/bsprit.png") calc((-76.6px * 5) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .icon-6 {
-      background: url("../images/bsprit.png") calc((-76.6px * 6) + 76.6px) -85px no-repeat; }
-    #features #feature-section .feature .feature-icon {
-      width: 76px;
-      height: 77px;
-      margin: 15px auto;
-      background-size: 900px 393px; }
+  #features #feature-section {
+    position: relative;
+    display: table; }
+    #features #feature-section:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      border: 25px solid white; }
+    #features #feature-section .feature {
+      position: relative;
+      border: 1px solid lightgray;
+      padding: 50px; }
+      #features #feature-section .feature p {
+        color: gray; }
+      #features #feature-section .feature .icon-1 {
+        background: url("../images/bsprit.png") calc((-76.6px * 1) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .icon-2 {
+        background: url("../images/bsprit.png") calc((-76.6px * 2) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .icon-3 {
+        background: url("../images/bsprit.png") calc((-76.6px * 3) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .icon-4 {
+        background: url("../images/bsprit.png") calc((-76.6px * 4) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .icon-5 {
+        background: url("../images/bsprit.png") calc((-76.6px * 5) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .icon-6 {
+        background: url("../images/bsprit.png") calc((-76.6px * 6) + 76.6px) -85px no-repeat; }
+      #features #feature-section .feature .feature-icon {
+        width: 76px;
+        height: 77px;
+        margin: 15px auto;
+        background-size: 900px 393px; }
+      #features #feature-section .feature:after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        bottom: -12.5px;
+        right: -25px;
+        z-index: 2;
+        background-color: white; }
 
 #about {
   background-color: lightgray; }
@@ -71,6 +94,69 @@
       width: 12px;
       height: 13px;
       background: url("../images/bsprit.png") -9px -114px no-repeat; }
+
+#testimonials .container .testimonial {
+  display: none; }
+  #testimonials .container .testimonial p {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center; }
+#testimonials .container .readable {
+  display: block; }
+#testimonials .container ul {
+  margin: 20px auto;
+  width: 75px;
+  height: 15px; }
+  #testimonials .container ul .dot {
+    cursor: pointer;
+    border: 2px solid #3498DB;
+    border-radius: 50%;
+    float: left;
+    width: 15px;
+    height: 100%; }
+    #testimonials .container ul .dot:not(:last-child) {
+      margin-right: 15px; }
+  #testimonials .container ul .active {
+    background-color: #3498DB; }
+
+#pricing {
+  background-color: lightgray;
+  text-align: center; }
+  #pricing .payment-options .option {
+    padding: 0;
+    border: 2px solid transparent;
+    margin-bottom: 25px; }
+    #pricing .payment-options .option .option-name {
+      font-size: 1.4em;
+      color: white;
+      padding: 10px;
+      background-color: #3498DB;
+      border-bottom: 1px solid lightgray; }
+    #pricing .payment-options .option .option-price {
+      font-size: 2.5em;
+      padding: 5px;
+      font-weight: bold;
+      background-color: white;
+      border-bottom: 1px solid lightgray; }
+    #pricing .payment-options .option ul {
+      margin: 0 auto; }
+      #pricing .payment-options .option ul li {
+        color: gray;
+        background-color: white;
+        padding: 10px; }
+        #pricing .payment-options .option ul li:not(:last-child) {
+          border-bottom: 1px solid lightgray; }
+    #pricing .payment-options .option .purchase {
+      padding: 20px;
+      background-color: #3498DB; }
+      #pricing .payment-options .option .purchase button {
+        border: none;
+        width: 175px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #1d6fa5;
+        font-size: 1.2em;
+        padding: 5px; }
 
 body {
   font-size: 14px; }
