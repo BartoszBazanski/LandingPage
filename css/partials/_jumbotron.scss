@@ -1,0 +1,39 @@
+#jumbotron {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    .container{
+        padding-bottom: 150px;
+        background-image: url("../images/handpic.png");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        .intro {
+            p {
+                width: 80%;
+                color: white;
+                font-size: 1.4em;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    cursor: pointer;
+                    float: left;
+                    width: 55px;
+                    height: 55px;
+                    margin-right: 10px;        
+                }
+                #mac{
+                    background: url("../images/bsprit.png") 0 0 no-repeat;
+                }
+                #android{
+                    background: url("../images/bsprit.png") -68px 0 no-repeat;
+                }
+                #windows{
+                    background: url("../images/bsprit.png") -136px 0 no-repeat;
+                }
+            }
+        }
+    }
+}
