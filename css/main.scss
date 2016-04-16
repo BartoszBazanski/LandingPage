@@ -1,8 +1,13 @@
 @import "partials/jumbotron";
 @import "partials/features";
+@import "partials/about";
+@import "partials/testimonials";
 
 body{
     font-size: 14px;
+}
+section:not(#jumbotron) {
+    padding: 75px;
 }
 h2, h3 {
     font-weight: bold;

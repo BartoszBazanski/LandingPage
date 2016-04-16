@@ -35,7 +35,7 @@
     text-align: center; }
   #features #feature-section .feature {
     border: 1px solid lightgray;
-    padding: 30px; }
+    padding: 50px; }
     #features #feature-section .feature p {
       color: gray; }
     #features #feature-section .feature .icon-1 {
@@ -56,8 +56,27 @@
       margin: 15px auto;
       background-size: 900px 393px; }
 
+#about {
+  background-color: lightgray; }
+  #about p, #about li {
+    color: gray;
+    font-size: 1.1em; }
+  #about h2 {
+    text-align: left; }
+  #about ul {
+    margin-left: 20px; }
+    #about ul li:before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 13px;
+      background: url("../images/bsprit.png") -9px -114px no-repeat; }
+
 body {
   font-size: 14px; }
+
+section:not(#jumbotron) {
+  padding: 75px; }
 
 h2, h3 {
   font-weight: bold;

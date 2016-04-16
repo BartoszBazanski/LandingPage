@@ -1,0 +1,20 @@
+#about{
+    background-color: lightgray;
+    p, li{
+        color: gray;
+        font-size: 1.1em;
+    }
+    h2 {
+        text-align: left;
+    }
+    ul{
+        margin-left: 20px;
+        li:before{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 13px;
+            background: url("../images/bsprit.png") -9px -114px no-repeat;
+        }
+    }
+}
