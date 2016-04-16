@@ -1,4 +1,16 @@
 @import "partials/jumbotron";
+@import "partials/features";
+
 body{
     font-size: 14px;
+}
+h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 1.7em;
+}
+h3 {
+    font-size: 1.5em;
 }

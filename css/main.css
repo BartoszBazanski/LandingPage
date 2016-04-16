@@ -28,7 +28,45 @@
       #jumbotron .container .intro ul #windows {
         background: url("../images/bsprit.png") -136px 0 no-repeat; }
 
+#features {
+  padding: 25px 0; }
+  #features p {
+    color: gray;
+    text-align: center; }
+  #features #feature-section .feature {
+    border: 1px solid lightgray;
+    padding: 30px; }
+    #features #feature-section .feature p {
+      color: gray; }
+    #features #feature-section .feature .icon-1 {
+      background: url("../images/bsprit.png") calc((-76.6px * 1) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .icon-2 {
+      background: url("../images/bsprit.png") calc((-76.6px * 2) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .icon-3 {
+      background: url("../images/bsprit.png") calc((-76.6px * 3) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .icon-4 {
+      background: url("../images/bsprit.png") calc((-76.6px * 4) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .icon-5 {
+      background: url("../images/bsprit.png") calc((-76.6px * 5) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .icon-6 {
+      background: url("../images/bsprit.png") calc((-76.6px * 6) + 76.6px) -85px no-repeat; }
+    #features #feature-section .feature .feature-icon {
+      width: 76px;
+      height: 77px;
+      margin: 15px auto;
+      background-size: 900px 393px; }
+
 body {
   font-size: 14px; }
+
+h2, h3 {
+  font-weight: bold;
+  text-align: center; }
+
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  font-size: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+#features {
+    padding: 25px 0;
+    p{
+        color: gray;
+        text-align: center;
+    }
+    #feature-section{
+        .feature{
+            border: 1px solid lightgray;
+            padding: 30px;
+            p {
+                color: gray;
+            }
+            @for $i from 1 through 6{
+                .icon-#{$i}{
+                    $offset: calc((-76.6px * #{$i}) + 76.6px);
+                    background: url("../images/bsprit.png") #{$offset} -85px no-repeat;
+                }
+            }
+            .feature-icon{
+                width: 76px;
+                height: 77px;
+                margin: 15px auto;
+                background-size: 900px 393px;
+            }
+        }
+    }
+}
