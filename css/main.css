@@ -158,6 +158,58 @@
         font-size: 1.2em;
         padding: 5px; }
 
+#contact {
+  text-align: center; }
+  #contact p {
+    color: gray; }
+  #contact .social {
+    display: table;
+    margin: 30px auto; }
+    #contact .social .social-icon {
+      position: relative;
+      float: left;
+      cursor: pointer;
+      display: inline-block;
+      width: 35px;
+      height: 35px; }
+      #contact .social .social-icon:not(:last-child) {
+        margin-right: 5px; }
+      #contact .social .social-icon:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #C5C5C5;
+        border-radius: 50%; }
+    #contact .social .icon-1 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 1 + 44px)) -133px no-repeat; }
+    #contact .social .icon-2 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 2 + 44px)) -133px no-repeat; }
+    #contact .social .icon-3 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 3 + 44px)) -133px no-repeat; }
+    #contact .social .icon-4 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 4 + 44px)) -133px no-repeat; }
+    #contact .social .icon-5 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 5 + 44px)) -133px no-repeat; }
+    #contact .social .icon-6 {
+      background: url("../images/bsprit.png") calc(3px + (-44px * 6 + 44px)) -133px no-repeat; }
+
+footer {
+  padding: 25px;
+  background-color: lightgray;
+  color: gray;
+  text-align: center; }
+  footer ul {
+    display: table;
+    margin: 0 auto; }
+    footer ul li {
+      float: left;
+      display: inline-block;
+      padding: 10px; }
+
 body {
   font-size: 14px; }
 

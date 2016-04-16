@@ -1,0 +1,15 @@
+footer{
+    padding: 25px;
+    background-color: lightgray;
+    color: gray;
+    text-align: center;
+    ul{
+        display: table;
+        margin: 0 auto;
+        li {
+            float: left;
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
